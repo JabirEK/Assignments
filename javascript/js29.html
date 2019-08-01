@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function form_a() {
+		var username=document.getElementById('us').value;
+		var password=document.getElementById('pas').value;
+		if (username=="admin" && password=="admin123") {
+			return true;
+		}
+		else{
+			alert("incorrect username and password");
+			return false;
+		}
+		
+		}	
+	</script>
+</head>
+<body>
+	<form action="jsanother.html" method="post" onsubmit="return form_a();">
+	Username:<input type="text" id="us" value=""/><br/><br/>
+	Password:<input type="password" id="pas" value=""/><br/><br/>
+	<input type="submit" value="submit" name="password">
+    </form>
+</body>
+</html>

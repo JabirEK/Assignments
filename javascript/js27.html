@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function form_a() {
+		
+		document.getElementById('welcome').innerHTML = "Welcome "+document.getElementById('name').value+" "+document.getElementById('sas').value+" "+document.getElementById('das').value;
+		}	
+	</script>
+</head>
+<body>
+	<form>
+	FirstName:<input type="text" id="name"/><br/>
+	LastName :<input type="text" id="sas" /><br/>
+    Email    :<input type="Email" id="das" /><br/>
+    Password :<input type="password"><br/>
+	<input type="button" value="signup" onclick="form_a();"/>
+    </form>
+    <p id="welcome"></p>
+</body>
+</html>

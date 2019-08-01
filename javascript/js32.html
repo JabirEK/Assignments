@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function is_checked() {
+            var yes_checked=document.getElementById('ma').checked;
+			var no_checked=document.getElementById('fe').checked;
+			if (yes_checked==false && no_checked==false) {
+				document.getElementById("c_gender").innerHTML="please enter the gender";
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+	</script>
+</head>
+<body bgcolor="#80ffff">
+	<h2 align="center">Radio Button Validation</h2>
+	<form action="jsanother.html" method="post" name="myForm" onsubmit="return is_checked();">
+		<table cellpadding="20px" cellspacing="5px" align="center">
+			<tr>
+				<td><label>Gender:</label></td>
+				<td><input type="radio" name="gender" value="male" id="ma">Male
+					<input type="radio" name="gender" value="female" id="fe">Female<br></td>
+			</tr>
+			<tr>
+				<td><label id="c_gender"></label></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit"></td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+</html>
